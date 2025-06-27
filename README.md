@@ -1,40 +1,68 @@
-# 🛠️ Colección de Scripts Bash - Edgar Climaco
+# 📦 actualiza.sh - Script de actualización para Kali/Debian
 
-Este repositorio contiene una colección de scripts Bash útiles para automatizar tareas comunes en sistemas Linux. Cada script está documentado y probado por Edgar Climaco Martínez.
-
----
-
-## 📜 Índice de Scripts
-
-1. [actualiza.sh](#actualizash) - Script para actualizar el sistema Linux fácilmente.
+Este script automatiza completamente la actualización de tu sistema basado en Debian o Kali Linux. Es ideal para ejecutarse periódicamente para mantener tu equipo seguro y optimizado.
 
 ---
 
-## 🔧 `actualiza.sh`
+## 🚀 Características
 
-**Descripción:**  
-Este script automatiza la actualización del sistema operativo Debian/Ubuntu/Kali, ejecutando `apt update` y `apt upgrade` con confirmación previa del usuario.
+* Actualiza índices de paquetes (`apt update`)
+* Instala paquetes disponibles (`apt upgrade` y `apt dist-upgrade`)
+* Elimina paquetes obsoletos (`apt autoremove`, `apt autoclean`)
+* Muestra resúmenes claros durante todo el proceso
 
-**Uso:**
-```bash
-bash actualiza.sh
-```
+---
 
-**Recomendación:**  
-Asigna permisos de ejecución con:
+## ⚙️ Uso
+
+Ejecuta el script con permisos de superusuario:
+
 ```bash
 chmod +x actualiza.sh
+sudo ./actualiza.sh
+```
+
+O bien:
+
+```bash
+sudo bash actualiza.sh
 ```
 
 ---
 
-## 🧩 Agrega tu propio script
+## 💡 Ejemplo de ejecución
 
-¿Tienes un script útil que quieras compartir o quieres mejorar uno existente? Puedes hacer un fork del repositorio, agregar tus cambios y abrir un Pull Request.
+```text
+Actualizando los repositorios...
+Descargando paquetes...
+Instalando actualizaciones disponibles...
+Limpiando paquetes innecesarios...
+✅ El sistema está actualizado. ¡Todo listo!
+```
 
 ---
 
-📅 Última actualización: 26 de June de 2025
-✍️ Autor: Edgar Climaco Martínez  
-🔗 [LinkedIn](https://linkedin.com/in/edgar-climaco-3b9942185)
+## 📁 Estructura del repositorio
+
+```
+/scripts/
+├── actualiza.sh
+└── README.md
+```
+
+---
+
+## 📜 Licencia
+
+Este proyecto se distribuye bajo la Licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente.
+
+---
+
+## 🙋 Autor
+
+Edgar Climaco Martínez - [LinkedIn](https://linkedin.com/in/edgar-climaco-3b9942185)
+
+🚛 Transportes VEPO
+🔐 Estudiante de Ciberseguridad
+💻 Kali Linux y automatización diaria
 
